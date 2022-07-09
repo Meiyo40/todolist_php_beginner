@@ -1,0 +1,100 @@
+#main,
+form,
+#todolist-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+form {
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+label,
+button {
+    margin-top: 5px;
+}
+
+#todolist-container {
+    flex-direction: column;
+}
+
+#task-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.task,
+.task-actions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task {
+    border: 2px solid #000000;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.task:hover {
+    transform: scale(1.1);
+    border-color: darkred;
+}
+
+.task-actions {
+    flex-direction: row;
+}
+
+.task-actions > form {
+    border: none;
+}
+
+.btn {
+    padding: 3px;
+    border-radius: 0.5rem;
+}
+
+.btn:hover{
+    border: 3px solid #00fdf0;
+}
+
+.btn-complete {
+    color: white;
+    background: blue;
+}
+
+.btn-delete {
+    color: white;
+    background: darkred;
+}
+
+.btn-add {
+    color: black;
+    background: yellow;
+}
+
+.updateButton {
+    color: white;
+    background: darkgreen;
+}
+
+#foot-navbar > form {
+    border: none;
+}
+
+#foot-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
